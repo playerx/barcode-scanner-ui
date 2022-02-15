@@ -1,0 +1,7 @@
+{
+  "name": "barcode-scanner-ui",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
