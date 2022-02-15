@@ -1,0 +1,272 @@
+* {
+  font-family: Roboto;
+}
+
+ion-app {
+  background: #01579b;
+  color: white;
+}
+
+ion-content {
+  --background: #01579b;
+  --color: white;
+}
+
+:host {
+  display: block;
+}
+
+@mixin centered {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 18px;
+}
+
+.fill {
+  flex: 1;
+}
+
+.mobileOnly {
+  display: none;
+}
+
+.desktopOnly {
+  display: block;
+}
+
+ion-button.playGame {
+  --ion-color-base: white;
+  font-weight: 600;
+  transition: 500ms;
+}
+
+.playSection {
+  height: 40px;
+
+  ion-button {
+    font-size: 30px;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  height: 90px;
+  @include centered;
+  padding-top: 18px;
+
+  .logo {
+    width: 86px;
+    height: 86px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 22px;
+      opacity: 0.9;
+      margin: 10px;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .actions {
+    align-self: center;
+    padding-right: 7px;
+
+    ion-button {
+      font-size: 30px;
+    }
+  }
+}
+
+section.main {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  @include centered;
+
+  .info {
+    flex: 1;
+    padding-left: 12px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h1 {
+      display: flex;
+      align-items: center;
+      font-size: 38px;
+      font-weight: normal;
+
+      jok-emoji {
+        width: 40px;
+      }
+    }
+
+    h2 {
+      font-weight: normal;
+      font-size: 22px;
+    }
+
+    h3 {
+      font-size: 22px;
+      padding-right: 90px;
+      margin-top: 40px;
+      margin-bottom: 50px;
+
+      font-weight: 300;
+      line-height: 35px;
+    }
+  }
+
+  .preview {
+    width: 255px;
+    height: 516px;
+    background: url("/assets/images/iphone_bg.png") center center no-repeat;
+    background-size: contain;
+
+    .img {
+      width: 223px;
+      height: 392px;
+      margin: 55px 17px;
+      background: url("/assets/images/app_preview_1.jpeg") top center no-repeat;
+      background-size: cover;
+    }
+  }
+}
+.downloads {
+  text-align: left;
+
+  .downloadButtons {
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 7px;
+
+    a {
+      margin-left: 7px;
+      margin-right: 7px;
+
+      img {
+        max-height: 50px;
+      }
+    }
+  }
+}
+section.features {
+  background: #154772;
+
+  .inner {
+    display: flex;
+    flex-direction: row;
+    @include centered;
+
+    .image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding-top: 50px;
+      @include centered;
+
+      div::ng-deep {
+        ul {
+          li {
+            margin-bottom: 15px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+section.moreFeatures {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    @include centered;
+  }
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+
+  .contact {
+    margin-top: 8px;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mobileOnly {
+    display: block;
+  }
+
+  .desktopOnly {
+    display: none;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+
+    .actions {
+      padding-right: 0;
+    }
+  }
+
+  section.main {
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      // display: none;
+    }
+
+    .info {
+      align-items: center;
+      padding-top: 0;
+
+      .downloads {
+        margin-bottom: 30px;
+
+        .downloadButtons {
+          a {
+            img {
+              max-height: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section.features .inner {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,3 +1,103 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-content>
+    <header>
+      <div class="fill mobileOnly"></div>
+      <div>
+        <ion-img class="logo" src="/assets/icon/scanicon-tr.png"></ion-img>
+      </div>
+      <div class="fill"></div>
+      <div class="actions desktopOnly">
+        <ion-buttons>
+          <ion-button fill="clear" (click)="lang = 'en'"> 🇬🇧 </ion-button>
+          <ion-button fill="clear" (click)="lang = 'ka'"> 🇬🇪 </ion-button>
+        </ion-buttons>
+      </div>
+    </header>
+    <section class="main">
+      <div class="info">
+        <h1>
+          🛑 #STOPRUSSIA
+
+          <ion-button fill="clear" color="light" (click)="shareTweet()">
+            <ion-icon
+              slot="icon-only"
+              src="/assets/logo-twitter.svg"
+            ></ion-icon>
+          </ion-button>
+        </h1>
+        <div class="playSection mobileOnly">
+          <ion-buttons>
+            <ion-button fill="clear" (click)="lang = 'en'"> 🇬🇧 </ion-button>
+            <ion-button fill="clear" (click)="lang = 'ka'"> 🇬🇪 </ion-button>
+          </ion-buttons>
+        </div>
+        <h2>{{ L.Info }}</h2>
+        <h3 [innerHTML]="L.Description"></h3>
+        <div class="downloads">
+          <div class="downloadButtons">
+            <a
+              href="https://apps.apple.com/us/app/online-joker/id1109734625"
+              target="_blank"
+            >
+              <img
+                src="/assets/images/download-app/appstore.png"
+                alt="appstore"
+              />
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=io.jok.joker"
+              target="_blank"
+            >
+              <img
+                src="/assets/images/download-app/playstore.png"
+                alt="playstore"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="preview">
+        <div class="img"></div>
+      </div>
+    </section>
+    <section class="features ion-padding">
+      <div class="inner">
+        <div class="image ion-padding">
+          <img src="/assets/images/tank2.png" />
+        </div>
+        <div class="container">
+          <h2>{{ L.Facts }}</h2>
+          <div [innerHTML]="L.FactsContent"></div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="downloads">
+        <div class="downloadButtons">
+          <a
+            href="https://apps.apple.com/us/app/online-joker/id1109734625"
+            target="_blank"
+          >
+            <img
+              src="/assets/images/download-app/appstore.png"
+              alt="appstore"
+            />
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=io.jok.joker"
+            target="_blank"
+          >
+            <img
+              src="/assets/images/download-app/playstore.png"
+              alt="playstore"
+            />
+          </a>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <div>© 2022</div>
+    </footer>
+  </ion-content>
 </ion-app>

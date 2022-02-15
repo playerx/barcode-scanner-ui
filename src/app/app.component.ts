@@ -1,4 +1,7 @@
+/* eslint-disable @typescript-eslint/member-ordering */
+/* eslint-disable @typescript-eslint/naming-convention */
 import { Component } from '@angular/core';
+import { translations } from './app.lang';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,19 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  lang: 'ka' | 'en' = 'en';
+
+  get L(): any {
+    return translations[this.lang] ?? translations.en;
+  }
+
+  constructor() {
+    this.lang = window.location.pathname.includes('ka') ? 'ka' : 'en';
+  }
+
+  shareTweet() {
+    const message = encodeURIComponent('Scan Products and #STOPRUSSIA');
+
+    window.open('https://twitter.com/intent/tweet?text=' + message);
+  }
 }

@@ -1,8 +1,8 @@
 {
-  "name": "app",
-  "short_name": "app",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "name": "Product Scanner",
+  "short_name": "scan_product",
+  "theme_color": "#01579B",
+  "background_color": "#01579B",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
