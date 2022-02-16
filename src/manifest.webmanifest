@@ -1,8 +1,8 @@
 {
   "name": "Product Scanner",
   "short_name": "scan_product",
-  "theme_color": "#01579B",
-  "background_color": "#01579B",
+  "theme_color": "#184f7f",
+  "background_color": "#184f7f",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
