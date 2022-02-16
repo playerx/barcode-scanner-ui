@@ -9,37 +9,38 @@ export const translations = {
     FactsContent: `
     <ul>
       <li>
-      Russian Federation had a war in 2008 with Georgia and for now, the Russian Army occupies 30% of Georgian Territory.
+        Russian Federation had a war in 2008 with Georgia and for now, the Russian Army occupies 20% of Georgian Territory.
       </li>
       <li>
-      Russians Federation used the same strategy with Ukraine and occupied their territories by force.
-
-      </li>
-      <li>Russian Federation occupies territories of Moldova.
+        Russian Federation used the same strategy with Ukraine and occupied their territories by force.
       </li>
       <li>
-      Russian Federation still wants to occupy more and now plans to occupy additional territories from Ukraine.
+        Russian Federation has occupied territories of Moldova.
+      </li>
+      <li>
+        Russian Federation still wants to occupy more and now plans to occupy additional territories from Ukraine.
       </li>
     </ul>
   `,
   },
   ka: {
-    Info: 'დაასკანირე პროდუქტი და გაიგე სად არის გამოშვებული',
+    Info: 'დაასკანირე პროდუქტი და გაიგე რომელი ქვეყანაა მწარმოებელი',
     Description:
-      'როდესაც ვყიდულობთ რუსულ პროდუქტს, ამით ჩვენ ფულს ვაგზავნით რუსეთის ფედერაციის ბიუჯეტში. შემდეგ კი ისინი იყენებენ ამას რომ სამხედრო თავდასხმა მოახდინონ ჩვენზე და ჩვენ მეზობელ ქვეყნებზე - უკრაინაზე, მოლდოვაზე.<br/><br/> თქვი არა რუსულ პროდუქტზე და აირჩიე ქართული ან ევროპული ალტერნატივა',
+      'როდესაც ვყიდულობთ რუსულ პროდუქტს, ამით ჩვენ ფულს ვაგზავნით რუსეთის ფედერაციის ბიუჯეტში. შემდეგ კი ისინი იყენებენ ამას რომ სამხედრო თავდასხმა მოახდინონ ჩვენზე და ჩვენ მეზობელ ქვეყნებზე - უკრაინაზე, მოლდოვაზე.<br/><br/> თქვი უარი რუსულ პროდუქტზე და აირჩიე ქართული ან ევროპული ალტერნატივა',
     Facts: 'ფაქტები',
     FactsContent: `
     <ul>
       <li>
-      2008 წელს რუსეთის ფედერაციას ჰქონდა ომი საქართველოსთან და დღეს საქართველოს ტერიტორიის 30% ოკუპირებულია რუსეთის არმიის მიერ.
+        2008 წელს რუსეთის ფედერაციას ჰქონდა ომი საქართველოსთან და დღეს საქართველოს ტერიტორიის 20% ოკუპირებულია რუსეთის არმიის მიერ.
       </li>
       <li>
-      რუსეთის ფედერაციამ იგივე სტრატეგია გამოიყენა უკრაინასთან მიმართებაში და ძალის გამოყენებით განახორციელა მათი ტერიტორიის ოკუპაცია
+       რუსეთის ფედერაციამ იგივე სტრატეგიით მოახდინა უკრაინის ტერიტორიის ოკუპაცია
       </li>
       <li>
-      რუსეთის ფედერაციას ასევე ოკუპირებული აქვს მოლდოვის ტერიტორიები</li>
+        რუსეთის ფედერაციას ასევე ოკუპირებული აქვს მოლდოვის ტერიტორიები
+      </li>
       <li>
-        დღეს რუსეთის ფედერაცია ცდილობს მეტი ტერიტორია წაიღოს უკრაინის სახელმწიფოსგან
+        დღეს რუსეთის ფედერაცია ცდილობს მეტი ტერიტორია მიითვისოს უკრაინის სახელმწიფოსგან
       </li>
     </ul>
   `,
