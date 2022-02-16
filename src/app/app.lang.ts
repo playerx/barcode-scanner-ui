@@ -5,21 +5,20 @@ export const translations = {
     Info: 'Scan Products and find out the Manufacturer Country',
     Description:
       'Every time you buy the Russian Product, your money is used by Russian     Federation to attack small independent countries, like Georgia,     Ukraine, Moldova, etc.',
-    Facts: 'Facts',
+    Facts: 'Quick Facts',
     FactsContent: `
     <ul>
       <li>
-        Russian Federation had a war in 2008 with Georgia and for now
-        Russian Army occupies 30% of Georgian Territory.
+      Russian Federation had a war in 2008 with Georgia and for now, the Russian Army occupies 30% of Georgian Territory.
       </li>
       <li>
-        Russians Federation used same strategy with Ukraine and occupied
-        their territories by force.
+      Russians Federation used the same strategy with Ukraine and occupied their territories by force.
+
       </li>
-      <li>Russian Federation occupies territories of Moldova.</li>
+      <li>Russian Federation occupies territories of Moldova.
+      </li>
       <li>
-        Russian Federation still wants to occupy more and now plans to
-        occupy additional territories from Ukraine.
+      Russian Federation still wants to occupy more and now plans to occupy additional territories from Ukraine.
       </li>
     </ul>
   `,
