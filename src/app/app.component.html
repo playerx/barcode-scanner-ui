@@ -8,7 +8,7 @@
       <div class="fill"></div>
       <div class="actions desktopOnly">
         <ion-buttons>
-          <ion-button fill="clear" (click)="lang = 'en'"> 🇬🇧 </ion-button>
+          <ion-button fill="clear" (click)="lang = 'en'"> 🇺🇸 </ion-button>
           <ion-button fill="clear" (click)="lang = 'ka'"> 🇬🇪 </ion-button>
         </ion-buttons>
       </div>
@@ -91,7 +91,22 @@
       <br />
       <br />
       <br />
-      <div>✊ © 2022</div>
+      <div class="copyright">
+        <div class="side desktopOnly"></div>
+
+        <div class="ion-text-center fill">✊ © 2022</div>
+        <div class="ion-padding-horizontal side ion-text-right">
+          <ion-button
+            href="https://github.com/playerx/barcode-scanner-ui"
+            target="_blank"
+            color="light"
+            fill="clear"
+            size="small"
+          >
+            Github
+          </ion-button>
+        </div>
+      </div>
     </footer>
   </ion-content>
 </ion-app>

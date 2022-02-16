@@ -220,6 +220,16 @@ footer {
       text-decoration: none;
     }
   }
+
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .side {
+      min-width: 200px;
+    }
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -252,6 +262,10 @@ footer {
       align-items: center;
       padding-top: 0;
 
+      h1 {
+        font-size: 30px;
+      }
+
       .downloads {
         margin-bottom: 30px;
 
@@ -269,5 +283,14 @@ footer {
   section.features .inner {
     flex-direction: column;
     align-items: center;
+  }
+
+  footer {
+    .copyright {
+      .fill {
+        text-align: left !important;
+        padding-left: 14px;
+      }
+    }
   }
 }
