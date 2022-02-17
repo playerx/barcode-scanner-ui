@@ -20,7 +20,9 @@ export class AppComponent {
   }
 
   shareTweet() {
-    const message = encodeURIComponent('Scan Products and #STOPRUSSIA');
+    const message = encodeURIComponent(
+      'Scan Products and #STOPRUSSIA ' + ' https://stoprussia.app'
+    );
 
     window.open('https://twitter.com/intent/tweet?text=' + message);
   }
