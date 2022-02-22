@@ -2,6 +2,12 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 import { Component } from '@angular/core';
 import { translations } from './app.lang';
+import { getFlagEmoji } from './common/getFlagEmoji';
+
+const languages = Object.keys(translations).map((x) => ({
+  code: x.toUpperCase(),
+  emoji: getFlagEmoji(x),
+}));
 
 @Component({
   selector: 'app-root',
@@ -9,14 +15,21 @@ import { translations } from './app.lang';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  lang: 'ka' | 'en' = 'en';
+  lang = 'us';
+  languages = languages;
 
   get L(): any {
-    return translations[this.lang] ?? translations.en;
+    return translations[this.lang] ?? translations.us;
   }
 
   constructor() {
-    this.lang = window.location.pathname.includes('ka') ? 'ka' : 'en';
+    const lang = location.hash.slice(1, 3).toLowerCase();
+    this.lang = translations[lang] ? lang : 'us';
+  }
+
+  changeLang(code: string) {
+    this.lang = code.toLowerCase();
+    location.hash = code.toUpperCase();
   }
 
   shareTweet() {
