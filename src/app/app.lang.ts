@@ -4,7 +4,7 @@ export const translations = {
   en: {
     Info: 'Scan Products and find out the Manufacturer Country',
     Description:
-      'Every time you buy the Russian Product, your money is used by Russian     Federation to attack small independent countries, like Georgia,     Ukraine, Moldova, etc.',
+      'Every time you buy the Russian Product, your money is used by Russian     Federation to attack independent countries, like Georgia,     Ukraine, Moldova, etc.',
     Facts: 'Quick Facts',
     FactsContent: `
     <ul>
