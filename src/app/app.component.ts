@@ -15,20 +15,20 @@ const languages = Object.keys(translations).map((x) => ({
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  lang = 'us';
+  lang = 'US';
   languages = languages;
 
   get L(): any {
-    return translations[this.lang] ?? translations.us;
+    return translations[this.lang] ?? translations.US;
   }
 
   constructor() {
-    const lang = location.hash.slice(1, 3).toLowerCase();
-    this.lang = translations[lang] ? lang : 'us';
+    const lang = location.hash.slice(1, 3).toUpperCase();
+    this.lang = translations[lang] ? lang : 'US';
   }
 
   changeLang(code: string) {
-    this.lang = code.toLowerCase();
+    this.lang = code.toUpperCase();
     location.hash = code.toUpperCase();
   }
 

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 
 export const translations = {
-  us: {
+  US: {
     Info: 'Scan Products and find out the Manufacturer Country',
     Description:
       'Every time you buy the Russian Product, your money is used by Russian     Federation to attack independent countries, like Georgia,     Ukraine, Moldova, etc.',
@@ -23,7 +23,7 @@ export const translations = {
     </ul>
   `,
   },
-  ge: {
+  GE: {
     Info: 'დაასკანირე პროდუქტი და გაიგე რომელი ქვეყანაა მწარმოებელი',
     Description:
       'როდესაც ვყიდულობთ რუსულ პროდუქტს, ამით ჩვენ ფულს ვაგზავნით რუსეთის ფედერაციის ბიუჯეტში. შემდეგ კი ისინი იყენებენ ამას რომ სამხედრო თავდასხმა მოახდინონ ჩვენზე და ჩვენ მეზობელ ქვეყნებზე - უკრაინაზე, მოლდოვაზე.<br/><br/> თქვი უარი რუსულ პროდუქტზე და აირჩიე ქართული ან ევროპული ალტერნატივა',
@@ -45,7 +45,7 @@ export const translations = {
     </ul>
   `,
   },
-  ua: {
+  UA: {
     Info: 'Скануй продукти та знаходь країну виробника',
     Description:
       'Кожного разу як ви купуєте російський продукт, ваші гроші використовуються для атак на незалежні країни, такі як Грузія, Україна, Молдова та інші',
